@@ -7,5 +7,27 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "dashboard-dashboard": {
+      "tags": []
+    },
+    "dashboard-dashboard-e2e": {
+      "tags": []
+    },
+    "core-state": {
+      "tags": []
+    },
+    "core-data": {
+      "tags": []
+    },
+    "material": {
+      "tags": []
+    },
+    "ui-toolbar": {
+      "tags": []
+    },
+    "ui-login": {
+      "tags": []
+    }
+  }
 }

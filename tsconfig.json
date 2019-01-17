@@ -12,7 +12,14 @@
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@env/*": ["apps/dashboard/src/environments/*"],
+      "@interstellar/core-state": ["libs/core-state/src/index.ts"],
+      "@interstellar/core-data": ["libs/core-data/src/index.ts"],
+      "@interstellar/material": ["libs/material/src/index.ts"],
+      "@interstellar/ui-toolbar": ["libs/ui-toolbar/src/index.ts"],
+      "@interstellar/ui-login": ["libs/ui-login/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
