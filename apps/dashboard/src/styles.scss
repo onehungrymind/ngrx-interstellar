@@ -10,7 +10,18 @@ body {
     display: flex;
 }
 
-md-toolbar-row {
+.mat-sidenav-container {
+  background: #f5f5f5;
+  flex: 1;
+}
+
+mat-sidenav {
+  box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
+  width: 40%;
+  padding: 10px;
+}
+
+mat-toolbar-row {
     justify-content: space-between;
 }
 
@@ -18,24 +29,20 @@ p {
     margin: 16px;
 }
 
-[md-raised-button] {
+[mat-raised-button] {
     width: 100%;
 }
 
-md-grid-list {
+mat-grid-list {
     max-width: 1403px;
     margin: 16px;
 }
 
-md-sidenav-layout {
+mat-sidenav-layout {
     height: 100vh;
 }
 
-md-sidenav {
-    width: 200px;
-}
-
-md-sidenav a {
+mat-sidenav a {
     box-sizing: border-box;
     display: block;
     font-size: 14px;
@@ -68,12 +75,12 @@ md-sidenav a {
     flex: 1;
 }
 
-md-card-header .mat-card-header-text {
+mat-card-header .mat-card-header-text {
     margin-left: 0;
     border-bottom: 1px solid #ffd740;
 }
 
-md-card-title h1 {
+mat-card-title h1 {
     display: inline;
 }
 
@@ -94,18 +101,8 @@ mat-toolbar {
     z-index: 1;
 }
 
-mat-sidenav {
-    box-shadow: 3px 0 6px rgba(0, 0, 0, .24);
-    width: 200px;
-}
-
-mat-card:not(.dashboard-card) {
-    margin-bottom: 20px;
-}
-
-.mat-sidenav-container {
-    background: #f5f5f5;
-    flex: 1;
+mat-card {
+    margin: 10px;
 }
 
 .fill-remaining-space {
@@ -114,6 +111,13 @@ mat-card:not(.dashboard-card) {
 
 .full-width {
     width: 100%;
+}
+
+ace-editor {
+  height: 300px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1.5em;
 }
 
 .dashboard-card {

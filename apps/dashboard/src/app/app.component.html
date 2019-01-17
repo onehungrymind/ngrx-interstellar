@@ -2,15 +2,20 @@
 
 <mat-sidenav-container>
   <mat-sidenav [opened]="isSidenaveOpen(sidenav, isLoggedIn)" #sidenav mode="side" class="app-sidenav">
-    <nav>
+    <!--
+      <nav>
       <a mat-button class="nav-link" *ngFor="let link of links"
         [routerLink]="link.path" routerLinkActive="active">
         <mat-icon>{{link.icon}}</mat-icon>
         {{link.label}}
       </a>
-    </nav>
-    <button style="width: 100%" mat-stroked-button color="primary" (click)="sideload()">Load</button>
-    <button style="width: 100%" mat-stroked-button color="accent" (click)="dispatch()">Dispatch</button>
+    </nav> -->
+
+    <ace-editor [(text)]="state" class="code" #stateEditor></ace-editor>
+    <button style="width: 100%" mat-raised-button color="primary" (click)="sideload()">Load State</button>
+
+    <ace-editor [(text)]="action" class="code" #actionEditor></ace-editor>
+    <button style="width: 100%" mat-raised-button color="primary" (click)="dispatch()">Dispatch Action</button>
   </mat-sidenav>
 
   <div class="app-content">
