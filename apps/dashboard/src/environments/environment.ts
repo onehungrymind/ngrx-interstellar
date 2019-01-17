@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: 'http://localhost:3000/'
+  apiEndpoint: 'http://localhost:3000/',
+  logrocket: 'PUT_KEY_HERE',
 };
 
 /*

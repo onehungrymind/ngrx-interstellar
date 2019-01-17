@@ -58,9 +58,9 @@ export function projectsReducers(
       return adapter.addAll(action.payload, state);
     case ProjectsActionTypes.ProjectAdded:
       return adapter.addOne(action.payload, state);
-    case ProjectsActionTypes.UpdateProject:
+    case ProjectsActionTypes.ProjectUpdated:
       return adapter.updateOne({id: action.payload.id, changes: action.payload}, state);
-    case ProjectsActionTypes.DeleteProject:
+    case ProjectsActionTypes.ProjectDeleted:
       return adapter.removeOne(action.payload.id, state);
     default:
       return state;
